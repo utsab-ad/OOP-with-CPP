@@ -4,6 +4,8 @@
     using namespace std;
     
     class Student {
+
+        //By default all the class members in C++ are private so we choose public to access them from outside
         public: 
             char name[20];
             int id;
