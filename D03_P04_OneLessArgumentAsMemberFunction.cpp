@@ -1,4 +1,4 @@
-//  Returning Object from Function 
+//  Returning Object from Function (One less Argument as Member FUnction)
 
 #include<iostream>
 using namespace std;
@@ -11,7 +11,7 @@ class Complex  {
     public: 
         void input();
         void display();
-        Complex addComplex(Complex C1, Complex C2);
+        Complex addComplex(Complex C2);
 };
 
 int main() {
@@ -29,7 +29,7 @@ int main() {
     cout << "\n Second Complex: ";
     second.display();
 
-    result = result.addComplex(first, second); 
+    result = first.addComplex(second);
     cout << "\n After Addition= --> ";
     result.display();
     
@@ -50,9 +50,9 @@ void Complex::display() {
     cout << "Imaginary : " << img << endl;
 }
 
-Complex Complex::addComplex(Complex C1, Complex C2) {
+Complex Complex::addComplex(Complex C2) {
     Complex result;
-    result.real = C1.real + C2.real;
-    result.img = C1.img + C2.img;
+    result.real = real + C2.real;
+    result.img = img + C2.img;
     return result;
 }
