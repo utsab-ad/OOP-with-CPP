@@ -69,7 +69,6 @@
     
     double Administration:: addMarks(Internal M1, External M2)
         {
-            int i;
             return (M1.x+M2.y);
         }
     
