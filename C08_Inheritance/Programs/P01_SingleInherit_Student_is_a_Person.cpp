@@ -1,5 +1,8 @@
-/* Example Program to implement Single Inheritance using private
-Inheritance mode*/
+/* WAP to implement "Student is a person", 
+Where the person has attributes name, address,
+ contact and student has additional features Rollno,
+  regNo, faculty and college name, define member function 
+  as per your requirement*/
 
 #include<iostream>
     using namespace std;
